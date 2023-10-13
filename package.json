@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mongoose": "^7.6.1",
+    "nodemon": "^3.0.1"
+  },
+  "name": "ecommerceapi",
+  "version": "1.0.0",
+  "description": "an ecommerce API on node.js and mongodb for admin to control products",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anshul9809/EcommerceAPI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anshul9809/EcommerceAPI/issues"
+  },
+  "homepage": "https://github.com/anshul9809/EcommerceAPI#readme"
+}
