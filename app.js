@@ -3,7 +3,7 @@ const port = 8800;
 const bodyParser = require('body-parser');
 
 
-const db = require('./config/mongoose');
+const db = require('./API/v1/config/mongoose');
 
 // initializing my app
 const app = express();
@@ -12,7 +12,7 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 
 
-app.use('/products', require('./routes/products'));
+app.use('/products', require('./API/v1/routes/products'));
 
 app.listen(port, function(err){
     if(err){
