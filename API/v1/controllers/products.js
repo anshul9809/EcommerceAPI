@@ -40,7 +40,7 @@ exports.updateQuantity = async function(req, res) {
     try {
         const ID = req.params.productID;
         const found = await Product.findById(ID);
-        const newQuantity = parseInt(found.quantity) + parseInt(req.query.number);
+        const newQuantity = parseInt(found.quantity) + parseInt(req.body.quantity);
         const updatedProduct = await Product.findByIdAndUpdate(ID, { quantity: newQuantity });
         updatedProduct.quantity = newQuantity;
         res.send({
